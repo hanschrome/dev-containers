@@ -32,5 +32,8 @@ WORKDIR /home/developer/Projects
 RUN git config --global user.email "you@example.com"
 RUN git config --global user.name "developer"
 
-RUN echo 'alias ng-serve="ng serve --host 0.0.0.0" --disable-host-check' >> /home/developer/.bashrc
+RUN echo 'echo ------------- ALIASES -----------------' >> /home/developer/.bashrc
+RUN echo 'echo ng-serve - Runs ng serve --host 0.0.0.0 --disable-host-check' >> /home/developer/.bashrc
+RUN echo 'echo ---------------------------------------' >> /home/developer/.bashrc
+RUN echo 'alias ng-serve="ng serve --host 0.0.0.0 --disable-host-check"' >> /home/developer/.bashrc
 
